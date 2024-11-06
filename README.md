@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# summarizedata
+# summarizedata2 Package Description
 
 <!-- badges: start -->
 <!-- badges: end -->
@@ -10,6 +10,10 @@ The function summarize_data intends to calculate the median, mean, and
 standard deviation (sd) under certain grouping condition in a dataset.
 An na.rm argument is used to indicate if missing value (NA) should be
 removed or not from the data.
+
+**Please note** that the package is named as”summarizedata2” to
+differentiate from another student’s package with “summarizedata” in
+Stat545 repo
 
 ## Installation
 
