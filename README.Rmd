@@ -27,7 +27,7 @@ You can install the development version of summarizedata from [GitHub](https://g
 
 ``` r
 # 
-devtools::install_github("stat545ubc-2024/assignment-b2-EricXiang1104")
+devtools::install_github("stat545ubc-2024/summarizedata2")
 ```
 
 ## Example
@@ -35,7 +35,7 @@ devtools::install_github("stat545ubc-2024/assignment-b2-EricXiang1104")
 This is a basic example which shows you how to solve a common problem:
 
 ```{r example}
-#devtools::install_github("stat545ubc-2024/assignment-b2-EricXiang1104")
+#devtools::install_github("stat545ubc-2024/summarizedata2")
 library(summarizedata)
 library(palmerpenguins)# used penguin data to demonstrate the example 
 summarize_data(penguins,species,island,summ_vars=bill_length_mm,na.rm=TRUE)

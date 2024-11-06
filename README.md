@@ -1,20 +1,24 @@
+
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
 # summarizedata
 
 <!-- badges: start -->
-
 <!-- badges: end -->
 
-The function summarize_data intends to calculate the median, mean, and standard deviation (sd) under certain grouping condition in a dataset. An na.rm argument is used to indicate if missing value (NA) should be removed or not from the data.
+The function summarize_data intends to calculate the median, mean, and
+standard deviation (sd) under certain grouping condition in a dataset.
+An na.rm argument is used to indicate if missing value (NA) should be
+removed or not from the data.
 
 ## Installation
 
-You can install the development version of summarizedata from [GitHub](https://github.com/) with:
+You can install the development version of summarizedata from
+[GitHub](https://github.com/) with:
 
 ``` r
 # 
-devtools::install_github("stat545ubc-2024/assignment-b2-EricXiang1104")
+devtools::install_github("stat545ubc-2024/summarizedata2")
 ```
 
 ## Example
@@ -22,7 +26,7 @@ devtools::install_github("stat545ubc-2024/assignment-b2-EricXiang1104")
 This is a basic example which shows you how to solve a common problem:
 
 ``` r
-#devtools::install_github("stat545ubc-2024/assignment-b2-EricXiang1104")
+#devtools::install_github("stat545ubc-2024/summarizedata2")
 library(summarizedata)
 library(palmerpenguins)# used penguin data to demonstrate the example 
 summarize_data(penguins,species,island,summ_vars=bill_length_mm,na.rm=TRUE)
