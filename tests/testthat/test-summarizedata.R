@@ -23,7 +23,7 @@ test_that("run into error ",
 
 expected_summary<-penguins%>%
   group_by(species,island)%>%
-  summarize(median=median(bill_length_mm,na.rm=TRUE),mean=mean(bill_length_mm,na.rm=TRUE),sd=sd(bill_length_mm,na.rm=TRUE))
+  summarize(median_v=median(bill_length_mm,na.rm=TRUE),mean_v=mean(bill_length_mm,na.rm=TRUE),sd_v=sd(bill_length_mm,na.rm=TRUE))
 
 #I then ran  the test to see if the same output is generated
 
@@ -31,3 +31,4 @@ test_that ("generate the same out put",{
   expect_equal(summarize_data(penguins,species,island,summ_vars=bill_length_mm
                               ,na.rm=TRUE),expected_summary)
 })
+

@@ -2,6 +2,7 @@
 #' @importFrom dplyr group_by
 #' @importFrom dplyr summarize
 #' @import palmerpenguins 
+#' @import stats
 #' @description: This function is to summarize the numeric variable in a dataset when given one or more grouping condition. It will generate a summary tibble to show the calculated median, mean and standard deviation of the numeric variable under the indicated grouping conditions. There is an option for user to ignore missing value with na.rm arguement.
 #' @details This function is utilizing `group_by`and `summarize()`functions in `dplyr` package
 #' @param data a data set in the data frame format or tibble format 
@@ -24,6 +25,6 @@ summarize_data<- function(data,...,summ_vars,na.rm=FALSE){
   #extra variable is used in grouping if needed
   data |>
     dplyr::group_by(...) |> 
-    dplyr::summarize(median=median({{summ_vars}},na.rm=na.rm),mean=mean({{summ_vars}},na.rm=na.rm),sd=sd({{summ_vars}},na.rm=na.rm)) 
+    dplyr::summarize(median_v=median({{summ_vars}},na.rm=na.rm),mean_v=mean({{summ_vars}},na.rm=na.rm),sd_v=sd({{summ_vars}},na.rm=na.rm)) 
 }
 
