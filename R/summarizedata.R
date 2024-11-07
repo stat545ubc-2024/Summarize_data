@@ -3,7 +3,7 @@
 #' @importFrom dplyr summarize
 #' @import palmerpenguins 
 #' @import stats
-#' @description: This function is to summarize the numeric variable in a dataset when given one or more grouping condition. It will generate a summary tibble to show the calculated median, mean and standard deviation of the numeric variable under the indicated grouping conditions. There is an option for user to ignore missing value with na.rm arguement.
+#' @description: This function is to summarize the numeric variable in a dataset when given one or more grouping conditions. It will generate a summary tibble to show the calculated median(median_v), mean (mean_v) and standard deviation (sd_v_) of the numeric variable under the indicated grouping conditions. There is an option for user to ignore missing value with na.rm arguement.
 #' @details This function is utilizing `group_by`and `summarize()`functions in `dplyr` package
 #' @param data a data set in the data frame format or tibble format 
 #' @param ...  ellipse, indicating one or multiple grouping variables in `data`, has to be a categorical variable existed in the dataset to group the population  

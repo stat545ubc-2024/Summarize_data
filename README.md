@@ -7,7 +7,7 @@
 <!-- badges: end -->
 
 The function summarize_data intends to calculate the median, mean, and
-standard deviation (sd) under certain grouping condition in a dataset.
+standard deviation (sd) under certain grouping conditions in a dataset.
 An na.rm argument is used to indicate if missing value (NA) should be
 removed or not from the data.
 
