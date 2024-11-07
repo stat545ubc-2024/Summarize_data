@@ -27,9 +27,11 @@ devtools::install_github("stat545ubc-2024/summarizedata2")
 
 ## Example
 
-This is a basic example which shows you how to usesummarizedata
+This is a basic example which shows you how to use package
+summarizedata2
 
 ``` r
+#only download if you have not installed the package
 #devtools::install_github("stat545ubc-2024/summarizedata2")
 library(summarizedata2)#import the package
 library(palmerpenguins)# used penguin data to demonstrate the example 
@@ -55,6 +57,4 @@ summarize_data(penguins,species,island,summ_vars=bill_length_mm,na.rm=TRUE)
 #> 3 Adelie    Torgersen     38.9   39.0  3.03
 #> 4 Chinstrap Dream         49.6   48.8  3.34
 #> 5 Gentoo    Biscoe        47.3   47.5  3.08
-
-## basic example code
 ```
