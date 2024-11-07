@@ -1,4 +1,4 @@
-#' Title: Summarize the variables in the provided data 
+#' Title: Summarize the data table
 #' @importFrom dplyr group_by
 #' @importFrom dplyr summarize
 #' @import palmerpenguins 
@@ -18,10 +18,11 @@
 
 
 summarize_data<- function(data,...,summ_vars,na.rm=FALSE){
-  
+  #stop if the summ_vars is not numeric or not in the data dataset
   if (!is.numeric(data[[deparse(substitute(summ_vars))]])) {
-    stop("Input summ_var is not in the data set or is not a numeric variable, double check")
-  }
+    stop("Input summ_vars is not in the data set or is not a numeric variable, double check")
+  } 
+   
   #extra variable is used in grouping if needed
   data |>
     dplyr::group_by(...) |> 

@@ -2,7 +2,7 @@
 % Please edit documentation in R/summarizedata.R
 \name{summarize_data}
 \alias{summarize_data}
-\title{Title: Summarize the variables in the provided data}
+\title{Title: Summarize the data table}
 \usage{
 summarize_data(data, ..., summ_vars, na.rm = FALSE)
 }
@@ -19,7 +19,7 @@ summarize_data(data, ..., summ_vars, na.rm = FALSE)
 A summary tibble with calculated  mean, median and standard deviation of the indicated variables.
 }
 \description{
-: This function is to summarize the numeric variable in a dataset when given one or more grouping condition. It will generate a summary tibble to show the calculated median, mean and standard deviation of the numeric variable under the indicated grouping conditions. There is an option for user to ignore missing value with na.rm arguement.
+: This function is to summarize the numeric variable in a dataset when given one or more grouping conditions. It will generate a summary tibble to show the calculated median(median_v), mean (mean_v) and standard deviation (sd_v_) of the numeric variable under the indicated grouping conditions. There is an option for user to ignore missing value with na.rm arguement.
 }
 \details{
 This function is utilizing \code{group_by}and \code{summarize()}functions in \code{dplyr} package

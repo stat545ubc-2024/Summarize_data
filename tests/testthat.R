@@ -7,6 +7,6 @@
 # * https://testthat.r-lib.org/articles/special-files.html
 
 library(testthat)
-library(summarizedata)
+library(summarizedata2)
 
-test_check("summarizedata")
+test_check("summarizedata2")

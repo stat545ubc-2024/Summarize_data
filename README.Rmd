@@ -38,9 +38,12 @@ This is a basic example which shows you how to usesummarizedata
 
 ```{r example}
 #devtools::install_github("stat545ubc-2024/summarizedata2")
-library(summarizedata)
+library(summarizedata2)
 library(palmerpenguins)# used penguin data to demonstrate the example 
+#Summarize the bill length  data by species and islands without ignoring the missing value
+summarize_data(penguins,species,island,summ_vars=bill_length_mm,na.rm=FALSE)
+#Summarize the bill length  data by species and islands when ignoring the missing value
 summarize_data(penguins,species,island,summ_vars=bill_length_mm,na.rm=TRUE)
-summarize_data(penguins,sex,island,summ_vars=bill_depth_mm,na.rm=TRUE)
+
 ## basic example code
 ```
